@@ -24,7 +24,11 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      if (!currentUser && pathname !== "/Sign-Up-Sitter") {
+      if (
+        !currentUser &&
+        pathname !== "/Sign-Up-Sitter" &&
+        pathname !== "/pending-approval"
+      ) {
         router.push("/Login");
       } else {
         setUser(currentUser);

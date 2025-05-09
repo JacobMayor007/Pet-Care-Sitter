@@ -54,7 +54,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const getMyMemorial = async () => {
+    const getMyOffer = async () => {
       try {
         const docRef = collection(db, "requester");
         const q = query(
@@ -97,7 +97,7 @@ export default function Home() {
       }
     };
 
-    getMyMemorial();
+    getMyOffer();
   }, [user]);
 
   useEffect(() => {
