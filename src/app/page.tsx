@@ -89,7 +89,7 @@ export default function Home() {
 
         setRequesterToday(today);
 
-        console.log("Today Memorials: ", today);
+        console.log("Today Sitter: ", today);
       } catch (error) {
         console.error(error);
       } finally {
