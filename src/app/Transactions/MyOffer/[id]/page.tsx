@@ -124,7 +124,7 @@ export default function TransactionsMyOffer({ params }: MyOfferID) {
               <FontAwesomeIcon icon={faCheck} className="text-white h-14" />{" "}
             </div>
           </div>
-          <h1 className="font-montserrat font-bold text-3xl">Succeful!</h1>
+          <h1 className="font-montserrat font-bold text-3xl">Successful!</h1>
         </div>
       </div>
     );
@@ -174,6 +174,7 @@ export default function TransactionsMyOffer({ params }: MyOfferID) {
                 Click here if paid
               </button>
             )}
+
           {requester?.sitting_service_status === "paid" && (
             <h1 className="font-montserrat font-bold text-xl m-auto text-[#006B95]">
               Paid

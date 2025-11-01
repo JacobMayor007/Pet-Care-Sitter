@@ -192,7 +192,7 @@ export default function SearchJob() {
               <FontAwesomeIcon icon={faCheck} className="text-white h-14" />{" "}
             </div>
           </div>
-          <h1 className="font-montserrat font-bold text-3xl">Succeful!</h1>
+          <h1 className="font-montserrat font-bold text-3xl">Successful!</h1>
         </div>
       </div>
     );
